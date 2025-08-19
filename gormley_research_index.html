@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gormley Research – Innovating Materials for the Future of Art</title>
+  <meta name="description" content="Gormley Research is an independent R&D studio in Honolulu bridging science and art. We develop advanced materials, highly pigmented artist mediums, and inkjet‑printable surfaces for museum‑quality results." />
+  <meta name="theme-color" content="#0f172a" />
+  <meta property="og:title" content="Gormley Research" />
+  <meta property="og:description" content="Empowering artists through science. Developing materials and services for the next generation of creators." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gormleyresearch.com/" />
+  <style>
+    :root{
+      --bg: #0b1020;        /* deep blue/charcoal */
+      --bg2:#0e1328;        /* raised surfaces */
+      --txt:#e6e9f2;        /* primary text */
+      --muted:#aab2c5;      /* secondary */
+      --accent:#8ee0ff;     /* subtle cyan accent */
+      --accent-2:#ffe08e;   /* warm accent */
+      --card:#0f1630;       /* card bg */
+      --max: 1080px;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f7fafc; --bg2:#ffffff; --txt:#0b1020; --muted:#3b4254; --card:#ffffff; --shadow:0 8px 24px rgba(8,15,30,.08);} 
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; font: 16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;
+      color:var(--txt); background: radial-gradient(1200px 800px at 80% -10%, rgba(142,224,255,.12), transparent 60%),
+                 radial-gradient(900px 700px at -10% 110%, rgba(255,224,142,.10), transparent 60%), var(--bg);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 20px}
+    header{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:8px 0}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2)); box-shadow:var(--shadow)}
+    .title{font-weight:700; letter-spacing:.2px}
+    .sub{color:var(--muted); font-size:14px; margin-top:-6px}
+
+    .hero{margin:40px 0 24px; padding:38px; border-radius:24px; background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02)); backdrop-filter: blur(6px); border:1px solid rgba(255,255,255,.06); box-shadow:var(--shadow)}
+    .hero h1{font-size: clamp(28px, 5vw, 46px); line-height:1.15; margin:0 0 10px}
+    .hero p{font-size: clamp(16px, 2.4vw, 20px); color:var(--muted); margin:0}
+    .cta-row{display:flex; gap:12px; flex-wrap:wrap; margin-top:22px}
+    .btn{display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:12px 18px; border-radius:14px; font-weight:600; border:1px solid transparent; cursor:pointer}
+    .btn.primary{background:linear-gradient(135deg,var(--accent),#66b8ff); color:#04121a}
+    .btn.ghost{background:transparent; border-color:rgba(255,255,255,.16); color:var(--txt)}
+
+    .grid{display:grid; grid-template-columns:1fr; gap:18px; margin:28px 0}
+    @media(min-width:880px){ .grid{grid-template-columns:1.2fr .8fr; gap:22px} }
+
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+    h2{margin:0 0 10px; font-size: clamp(20px, 3vw, 28px)}
+    p{margin:0 0 10px}
+    blockquote{margin:0; padding:14px 18px; background:rgba(255,255,255,.06); border-left:4px solid var(--accent); border-radius:10px}
+
+    footer{margin:28px 0 60px; padding:22px; border-radius:18px; background:var(--bg2); border:1px solid rgba(255,255,255,.08)}
+    .foot-grid{display:grid; grid-template-columns:1fr; gap:10px}
+    @media(min-width:700px){ .foot-grid{grid-template-columns:1fr auto} }
+    .small{color:var(--muted); font-size:14px}
+
+    .pill{display:inline-block; font-size:12px; letter-spacing:.35px; padding:6px 10px; border:1px solid rgba(255,255,255,.15); border-radius:999px; color:var(--muted);}
+    .list{display:grid; gap:10px; margin-top:12px}
+    .list li{list-style:none; background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); padding:12px 14px; border-radius:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="title">Gormley Research</div>
+          <div class="sub">Innovating Materials for the Future of Art</div>
+        </div>
+      </div>
+      <div class="pill" aria-label="Location">Honolulu, Hawaii</div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Empowering Artists Through Science</h1>
+      <p>Developing advanced materials and services designed for the next generation of creators.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="mailto:dustingormley@gmail.com?subject=Waitlist%20Request&body=Hi%20Gormley%20Research%2C%0A%0APlease%20add%20me%20to%20the%20waitlist%20for%20updates.%0A">Join the Waitlist</a>
+        <a class="btn ghost" href="#updates" aria-label="Check Back Soon">Check Back Soon</a>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card" aria-labelledby="mission">
+        <h2 id="mission">Mission Statement</h2>
+        <blockquote>
+          “Our mission is to empower artists to realize their full potential through scientific research and to create new opportunities across a wide range of art applications. We aim to serve 21st-century art communities with cutting-edge materials, innovative processes, and accessible solutions.”
+        </blockquote>
+      </section>
+
+      <aside class="card" aria-labelledby="quick-links">
+        <h2 id="quick-links">Focus Areas</h2>
+        <ul class="list">
+          <li>Archival‑quality, inkjet‑printable surfaces</li>
+          <li>Highly pigmented formulations of artist mediums</li>
+          <li>Experimental coatings & materials science</li>
+          <li>High‑fidelity giclée printing at low costs</li>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="card" aria-labelledby="about">
+      <h2 id="about">About Gormley Research</h2>
+      <p>Gormley Research is an independent R&amp;D studio dedicated to <strong>bridging the gap between science and art</strong>. Our goal is to create materials and technologies that give creators greater control, higher quality, and more freedom in how they bring their work to life.</p>
+      <p>We specialize in exploring <strong>advanced technologies</strong>, <strong>highly pigmented artist mediums</strong>, and a <strong>full range of inkjet‑printable surfaces</strong> designed for creators who demand <strong>museum‑quality results</strong> — without the premium price tag.</p>
+    </section>
+
+    <section id="updates" class="card" aria-labelledby="coming">
+      <h2 id="coming">Coming Soon</h2>
+      <p class="small">We’re currently in development and testing. Sign up above to hear when services launch.</p>
+    </section>
+
+    <footer>
+      <div class="foot-grid">
+        <div>
+          <strong>Gormley Research</strong><br/>
+          <span class="small">Innovating Materials for the Future of Art</span>
+        </div>
+        <div class="small">
+          📧 <a href="mailto:dustingormley@gmail.com">dustingormley@gmail.com</a><br/>
+          © <span id="year"></span> Gormley Research. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
